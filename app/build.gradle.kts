@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -201,4 +201,6 @@ dependencies {
 
     // https://mavenlibs.com/maven/dependency/com.kaspersky.android-components/kaspresso
     implementation("com.kaspersky.android-components:kaspresso:1.5.1")
+    implementation ("androidx.activity:activity-compose:1.0.0-beta01")
+
 }
